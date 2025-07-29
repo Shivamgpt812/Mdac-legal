@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms of Service | YourCompany</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4361ee;
+      --primary-dark: #3a56d4;
+      --secondary: #4cc9f0;
+      --dark: #14213d;
+      --gray-900: #1a1a1a;
+      --gray-700: #4a4a4a;
+      --gray-500: #6b7280;
+      --gray-300: #e5e7eb;
+      --gray-100: #f9fafb;
+      --white: #ffffff;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      color: var(--gray-700);
+      background-color: var(--gray-100);
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    
+    @media (min-width: 768px) {
+      .container {
+        padding: 4rem 2rem;
+      }
+    }
+    
+    .terms-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    @media (min-width: 768px) {
+      .terms-card {
+        padding: 3.5rem;
+      }
+    }
+    
+    .terms-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+    
+    h1 {
+      color: var(--dark);
+      font-weight: 700;
+      font-size: 2.25rem;
+      margin-bottom: 1.75rem;
+      line-height: 1.2;
+    }
+    
+    h2 {
+      color: var(--dark);
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin: 2.5rem 0 1.25rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+    
+    h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.35em;
+      height: 1em;
+      width: 6px;
+      background: var(--primary);
+      border-radius: 3px;
+    }
+    
+    h3 {
+      color: var(--gray-900);
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 1.75rem 0 0.75rem;
+    }
+    
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--gray-700);
+    }
+    
+    ul, ol {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    
+    li {
+      margin-bottom: 0.5rem;
+    }
+    
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    
+    a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+    
+    .highlight-box {
+      background-color: var(--gray-100);
+      border-left: 4px solid var(--primary);
+      padding: 1.25rem;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 1.5rem 0;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray-300);
+      color: var(--gray-500);
+      font-size: 0.875rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    
+    .last-updated {
+      font-weight: 500;
+    }
+    
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 0.5rem;
+    }
+    
+    .logo-icon {
+      width: 24px;
+      height: 24px;
+      background: var(--primary);
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+    
+    .toc-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 2rem 0;
+    }
+    
+    .toc-list li {
+      margin-bottom: 0.75rem;
+    }
+    
+    .toc-list a {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .toc-list a::before {
+      content: '→';
+      color: var(--primary);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="terms-card">
+      <div class="logo">
+        <span>M-DAC</span>
+      </div>
+      
+      <h1>Terms of Service</h1>
+      <p>Last Updated: <span class="last-updated">July 29, 2025</span></p>
+      
+      <p>These Terms of Service ("Terms") govern your access to and use of our software, services, and applications (collectively, the "Service"). By accessing or using the Service, you agree to be bound by these Terms.</p>
+      
+      <div class="highlight-box">
+        <p><strong>Key Points:</strong> You must follow our acceptable use policies. We may modify these Terms with notice. Your continued use constitutes acceptance of any changes.</p>
+      </div>
+      
+      <h2>Table of Contents</h2>
+      <ul class="toc-list">
+        <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+        <li><a href="#service-use">2. Use of the Service</a></li>
+        <li><a href="#user-responsibilities">3. User Responsibilities</a></li>
+        <li><a href="#communications">4. Communications</a></li>
+        <li><a href="#modifications">5. Modifications to the Service</a></li>
+        <li><a href="#termination">6. Termination</a></li>
+        <li><a href="#disclaimer">7. Disclaimer of Warranties</a></li>
+        <li><a href="#limitation">8. Limitation of Liability</a></li>
+        <li><a href="#governing-law">9. Governing Law</a></li>
+        <li><a href="#changes">10. Changes to Terms</a></li>
+        <li><a href="#contact">11. Contact Information</a></li>
+      </ul>
+      
+      <h2 id="acceptance">1. Acceptance of Terms</h2>
+      <p>By accessing or using the Service, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you may not use the Service.</p>
+      
+      <h2 id="service-use">2. Use of the Service</h2>
+      <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable license to access and use the Service for your personal or business purposes.</p>
+      
+      <h3>Prohibited Conduct</h3>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the Service for any illegal purpose or in violation of any laws</li>
+        <li>Attempt to gain unauthorized access to our systems or networks</li>
+        <li>Interfere with the proper working of the Service</li>
+        <li>Use the Service to transmit spam, malware, or harmful code</li>
+        <li>Reverse engineer, decompile, or disassemble any part of the Service</li>
+      </ul>
+      
+      <h2 id="user-responsibilities">3. User Responsibilities</h2>
+      <p>You are responsible for:</p>
+      <ul>
+        <li>Maintaining the confidentiality of your account credentials</li>
+        <li>All activities that occur under your account</li>
+        <li>Complying with all applicable laws and regulations</li>
+        <li>Ensuring your use of the Service does not violate any third-party rights</li>
+      </ul>
+      
+      <h2 id="communications">4. Communications</h2>
+      <p>Our Service may send communications via WhatsApp, SMS, or other messaging platforms for purposes including:</p>
+      <ul>
+        <li>One-time passwords (OTPs) for authentication</li>
+        <li>Service notifications and alerts</li>
+        <li>Account-related communications</li>
+        <li>Security updates</li>
+      </ul>
+      <p>By using the Service, you consent to receive these communications. Standard messaging rates may apply.</p>
+      
+      <h2 id="modifications">5. Modifications to the Service</h2>
+      <p>We reserve the right to modify, suspend, or discontinue the Service (or any part of it) at any time with or without notice. We will not be liable for any modification, suspension, or discontinuance of the Service.</p>
+      
+      <h2 id="termination">6. Termination</h2>
+      <p>We may terminate or suspend your access to the Service immediately, without prior notice or liability, for any reason, including if you breach these Terms.</p>
+      
+      <h2 id="disclaimer">7. Disclaimer of Warranties</h2>
+      <p>THE SERVICE IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. WE DISCLAIM ALL WARRANTIES INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+      
+      <h2 id="limitation">8. Limitation of Liability</h2>
+      <p>IN NO EVENT SHALL WE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICE.</p>
+      
+      <h2 id="governing-law">9. Governing Law</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law provisions.</p>
+      
+      <h2 id="changes">10. Changes to Terms</h2>
+      <p>We may update these Terms from time to time. We will notify you of any changes by posting the new Terms on this page. Your continued use of the Service after such changes constitutes your acceptance of the new Terms.</p>
+      
+      <h2 id="contact">11. Contact Information</h2>
+      <p>If you have any questions about these Terms, please contact us:</p>
+      <ul>
+        <li>Email: <a href="mailto:legal@yourcompany.com">legal@m-dac.com</a></li>
+        <li>Postal Address: Paschim Vihar, New Delhi</li>
+        <li>Phone: +1 (555) 123-4567</li>
+      </ul>
+      
+      <div class="footer">
+        <div>© 2025 M-DAC. All rights reserved.</div>
+        <div>Terms Version: 2.0</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
